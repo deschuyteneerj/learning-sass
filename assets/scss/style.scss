@@ -1,10 +1,14 @@
+$kaki:#e6dbc9;
+$red: #c53211;
+$grey:#2e3830;
+
 body {
-    background-color: #e6dbc9;
+    background-color: $kaki;
     margin: 0;
 }
 
 section {
-    padding-top: 3em;
+    padding-top: (48/16)*1em;
 }
 
 /*Header*/
@@ -12,56 +16,66 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #c53211;
+    background-color: $red;
     align-items: center;
 }
 
-.nav ul {
+.nav {
+    ul {
     list-style: none;
+    }
 }
 
-.nav .menu {
-    display: flex;
-    gap: 1em;
+.nav {
+    .menu {
+        display: flex;
+        gap: 1em;
+    }
 }
 
 header p , h3 {
-    padding-left: 1em;
-    color: #e6dbc9;
+    padding-left: (16/16)*1em;
+    color: $kaki;
 }
 
-.menu li a {
-    padding-right: 1em;
-    color: #e6dbc9;
+.menu {
+    li {
+        a {
+            padding-right: (16/16)*1em;
+            color: $kaki;
+        }
+    }
 }
 
 /*Hero*/
 #hero {
     background-image: url("../image/photos-gratuites-libres-de-droits-157.jpg");
     background-size: cover;
-    padding: 15% 0 15% 0;
+    padding: (3/20)*100% 0 (3/20)*100% 0;
 }
 
-#quote a {
-    color: #2e3830;
+#quote {
+    a {
+        color: $grey;
+    }
 }
 
 .title {
     text-align: center;
     background-color: rgba(197, 50, 17, 0.7);
-    width: 50%;
+    width: (50/100)*100%;
     margin: 0 auto;
     border-radius: 10px;
 }
 
 h1 {
     font-size: 50px;
-    color: #e6dbc9;
-    padding-top: 1em;
+    color: $kaki;
+    padding-top: (16/16)*1em;
 }
 
 small {
-    color: #e6dbc9;
+    color: $kaki;
 }
 
 /*Presentation & Goal*/
@@ -73,36 +87,38 @@ small {
 .subdiv {
     display: flex;
     flex-direction: column;
-    max-width: 50%;
+    max-width: (50/100)*100%;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
 .left {
-    padding-right: 5%;
+    padding-right: (5/100)*100%;
 }
 
 .right{
-    padding-left: 5%;
+    padding-left: (5/100)*100%;
 }
 
 .left.text {
-    padding-left: 2em;
+    padding-left: (32/16)*1em;
 }
 
 .right.text {
-    padding-right: 2em;
+    padding-right: (32/16)*1em;
 }
 
-div img {
-    max-height: 75%;
-    max-width: 75%; 
-    border-radius: 10px;
+div {
+    img {
+        max-height: (75/100)*100%;
+        max-width: (75/100)*100%; 
+        border-radius: 10px;
+    }
 }
 
 .subdiv h2, .subdiv p {
-    color: #2e3830;
+    color: $grey;
 }
 
 /*Video*/
@@ -114,9 +130,11 @@ div img {
     margin-top: 2em;
 }
 
-#video h2 {
-    color: #2e3830;
-    padding-bottom: 1em;
+#video {
+        h2 {
+            color: $grey;
+            padding-bottom: (16/16)*1em;
+        }
 }
 
 /*Other associations*/
@@ -127,15 +145,17 @@ div img {
 }
 
 #associations, ul li a {
-    color: #2e3830;
+    color: $grey;
 }
 
 #associations {
-    padding: 2em 0 2em 0;
+    padding: (32/16)*1em 0 (32/16)*1em 0;
 }
 
-#associations p {
-    color: #2e3830;
+#associations {
+    p {
+        color: $grey;
+    }
 }
 
 /*Footer*/
@@ -143,7 +163,7 @@ div img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #c53211;
+    background-color: $red;
     justify-content: space-around;
 }
 
@@ -152,14 +172,16 @@ div img {
     justify-content: center;
 }
 
-footer div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+footer {
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 p, p a, h3 {
-    color: #e6dbc9;
+    color: $kaki;
 }
 
 /*Links*/
@@ -188,6 +210,8 @@ p {
     font-size: 20px;
 }
 
-li a {
-    font-size: 20px;
+li {
+    a {
+        font-size: 20px;
+    }
 }

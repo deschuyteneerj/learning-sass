@@ -8,6 +8,4 @@ I dit it on 1 day after spending more than one week @ BeCode.org Charleroi !
 
 This exercise is to create a one pager for a charity association. I used HTML, CSS, Flexbox and every knowledge acquired during this week.
 
-## Link to the GitHub Page
-
-Here is the link to the GitHub Page: <https://deschuyteneerj.github.io/one-pager-charity-association/>
+I used SASS for the first time and re-use the exercise above to learn it.
